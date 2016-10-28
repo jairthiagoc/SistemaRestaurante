@@ -1,0 +1,34 @@
+﻿@model IEnumerable<SisRestaurante.Web.Models.RestauranteView>
+
+<style>
+    .glyphicon-minus {
+        color: red;
+    }
+</style>
+
+<div class="panel panel-default">
+    <div class="panel-heading">Lista de Restaurantes</div>
+    <table class="table">
+        <tr>
+            <th></th>
+            <th colspan="2">
+                @Html.DisplayNameFor(model => model.Nome)
+            </th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.ActionLink(" ", "Delete", new {id = item.RestauranteId}, new {@class = "glyphicon glyphicon-minus" })
+                    @Html.ActionLink(" ", "Edit", new {id = item.RestauranteId}, new {@class = "glyphicon glyphicon-pencil"})
+                </td>
+                <td colspan="2">
+                    @Html.DisplayFor(modelItem => item.Nome)
+                </td>
+            </tr>
+        }
+    </table>
+</div>   
+
+<p>@ViewBag.Mensagem</p>

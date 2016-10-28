@@ -1,0 +1,14 @@
+C:\Users\jtcm\documents\visual studio 2015\ProjectsModelDDD\SisRestaurante\SisRestaurante.Domain\bin\Debug\SisRestaurante.Domain.dll.config
+C:\Users\jtcm\documents\visual studio 2015\ProjectsModelDDD\SisRestaurante\SisRestaurante.Domain\bin\Debug\SisRestaurante.Domain.dll
+C:\Users\jtcm\documents\visual studio 2015\ProjectsModelDDD\SisRestaurante\SisRestaurante.Domain\bin\Debug\SisRestaurante.Domain.pdb
+C:\Users\jtcm\documents\visual studio 2015\ProjectsModelDDD\SisRestaurante\SisRestaurante.Domain\bin\Debug\EntityFramework.dll
+C:\Users\jtcm\documents\visual studio 2015\ProjectsModelDDD\SisRestaurante\SisRestaurante.Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\jtcm\documents\visual studio 2015\ProjectsModelDDD\SisRestaurante\SisRestaurante.Domain\bin\Debug\SisRestaurante.Entity.dll
+C:\Users\jtcm\documents\visual studio 2015\ProjectsModelDDD\SisRestaurante\SisRestaurante.Domain\bin\Debug\SisRestaurante.Entity.pdb
+C:\Users\jtcm\documents\visual studio 2015\ProjectsModelDDD\SisRestaurante\SisRestaurante.Domain\bin\Debug\EntityFramework.xml
+C:\Users\jtcm\documents\visual studio 2015\ProjectsModelDDD\SisRestaurante\SisRestaurante.Domain\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\jtcm\documents\visual studio 2015\ProjectsModelDDD\SisRestaurante\SisRestaurante.Domain\obj\Debug\SisRestaurante.Domain.csprojResolveAssemblyReference.cache
+C:\Users\jtcm\documents\visual studio 2015\ProjectsModelDDD\SisRestaurante\SisRestaurante.Domain\obj\Debug\SisRestaurante.Domain.Migrations.Initial.resources
+C:\Users\jtcm\documents\visual studio 2015\ProjectsModelDDD\SisRestaurante\SisRestaurante.Domain\obj\Debug\SisRestaurante.Domain.csproj.GenerateResource.Cache
+C:\Users\jtcm\documents\visual studio 2015\ProjectsModelDDD\SisRestaurante\SisRestaurante.Domain\obj\Debug\SisRestaurante.Domain.dll
+C:\Users\jtcm\documents\visual studio 2015\ProjectsModelDDD\SisRestaurante\SisRestaurante.Domain\obj\Debug\SisRestaurante.Domain.pdb

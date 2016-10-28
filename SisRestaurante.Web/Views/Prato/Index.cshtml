@@ -1,0 +1,69 @@
+﻿@model IEnumerable<SisRestaurante.Web.Models.PratoView>
+
+@{
+    ViewBag.Title = "Consultar Pratos";
+}
+<style>
+    .glyphicon-minus {
+        color: red;
+    }
+</style>
+
+<h2>Consultar Pratos</h2>
+
+<div>
+    @TempData["mensagem"]
+</div>
+
+<div class="panel panel-default">
+    <div class="container">
+        <div>
+            @TempData["mensagem"]
+        </div>
+        <hr />
+        <form class="form col-lg-6">
+            <div class="row col-md-2">
+                <div class="form-group row">
+                    @Html.ActionLink("Cadastrar Novo Prato", "Create", new {@area = ""}, new {@class = "btn btn-success"})
+                </div>
+            </div>
+        </form>
+
+        <table class="table table-striped">
+            <tr class="info">
+                <th style="width: 5%"></th>
+                <th style="width: 35%">
+                    @Html.DisplayNameFor(model => model.Restaurante.Nome)
+                </th>
+                <th style="width: 35%">
+                    @Html.DisplayNameFor(model => model.Nome)
+                </th>
+                <th style="width: 5%">
+                    @Html.DisplayNameFor(model => model.Preco)
+                </th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.ActionLink(" ", "Delete", new {id = item.PratoId}, new {@class = "glyphicon glyphicon-minus"})
+                        @Html.ActionLink(" ", "Edit", new {id = item.PratoId}, new {@class = "glyphicon glyphicon-pencil"})
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Restaurante.Nome)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Nome)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Preco)
+                    </td>
+                </tr>
+            }
+        </table>
+    </div>
+</div>
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

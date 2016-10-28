@@ -1,0 +1,10 @@
+C:\Users\jtcm\documents\visual studio 2015\ProjectsModelDDD\SisRestaurante\SisRestaurante.Entity\bin\Debug\SisRestaurante.Entity.dll.config
+C:\Users\jtcm\documents\visual studio 2015\ProjectsModelDDD\SisRestaurante\SisRestaurante.Entity\bin\Debug\SisRestaurante.Entity.dll
+C:\Users\jtcm\documents\visual studio 2015\ProjectsModelDDD\SisRestaurante\SisRestaurante.Entity\bin\Debug\SisRestaurante.Entity.pdb
+C:\Users\jtcm\documents\visual studio 2015\ProjectsModelDDD\SisRestaurante\SisRestaurante.Entity\bin\Debug\EntityFramework.dll
+C:\Users\jtcm\documents\visual studio 2015\ProjectsModelDDD\SisRestaurante\SisRestaurante.Entity\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\jtcm\documents\visual studio 2015\ProjectsModelDDD\SisRestaurante\SisRestaurante.Entity\bin\Debug\EntityFramework.xml
+C:\Users\jtcm\documents\visual studio 2015\ProjectsModelDDD\SisRestaurante\SisRestaurante.Entity\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\jtcm\documents\visual studio 2015\ProjectsModelDDD\SisRestaurante\SisRestaurante.Entity\obj\Debug\SisRestaurante.Entity.dll
+C:\Users\jtcm\documents\visual studio 2015\ProjectsModelDDD\SisRestaurante\SisRestaurante.Entity\obj\Debug\SisRestaurante.Entity.pdb
+C:\Users\jtcm\documents\visual studio 2015\ProjectsModelDDD\SisRestaurante\SisRestaurante.Entity\obj\Debug\SisRestaurante.Entity.csprojResolveAssemblyReference.cache

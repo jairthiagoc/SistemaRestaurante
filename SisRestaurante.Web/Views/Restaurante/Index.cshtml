@@ -1,0 +1,69 @@
+﻿@model IEnumerable<SisRestaurante.Web.Models.RestauranteView>
+
+@{
+    ViewBag.Title = "Consultar Restaurantes";
+}
+
+<h2>Restaurantes</h2>
+
+@if (@ViewBag.Mensagem != null)
+{
+    <div class="alert-success">
+        @ViewBag.Mensagem
+    </div>
+}
+
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">Filtro</h3>
+    </div>
+    <div class="container">
+        <form class="form col-lg-6">
+            <div class="form-group row">
+                <div class="offset-sm-2 col-sm-10">
+                    <label class="control-label">Nome</label>
+                    <input type="text" id="nome" name="nome" class="form-control" placeholder="Nome que para pesquisa.">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <div class="offset-sm-2 col-sm-10">
+                    <button type="button" class="btn btn-primary" id="btnFiltrar" value="">Pesquisar</button>
+                    @Html.ActionLink("Cadastrar Novo Restaurante", "Create", new { @area = "" }, new { @class = "btn btn-success" })
+                </div>
+            </div>
+
+        </form>
+    </div>
+</div>
+<div id="lsrestaurante">
+    @{ Html.RenderPartial("ListaRestaurantes"); }
+</div>
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval");
+
+   <script type="text/javascript">
+        $(document)
+            .ready(function() {
+                $("#btnFiltrar")
+                    .click(function() {
+                        $.ajax({
+                            type: 'Get',
+                            url: '@Url.Action("ListarRestaurante", "Restaurante")',
+                            contentType: "application/json; charset=utf-8",
+                            dataType: "html",
+                            data: { nome: $("#nome").val() },
+                            success: function (data) {
+                                $("#lsrestaurante").html(data);
+                            },
+                            error: function(xhr, ajaxOptions, thrownError) {
+                                alert(xhr.status);
+                                alert(thrownError);
+                            }
+                        });
+                        
+                    });
+            });
+    </script>
+}
