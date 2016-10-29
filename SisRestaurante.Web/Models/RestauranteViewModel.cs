@@ -4,11 +4,12 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
+using SisRestaurante.Web.Models;
 
 namespace SisRestaurante.Web.Models
 {
     [Table("Restaurante")]
-    public class RestauranteView
+    public class RestauranteViewModel
     {
         public int RestauranteId { get; set; }
 
@@ -17,6 +18,6 @@ namespace SisRestaurante.Web.Models
         [Required(ErrorMessage = "O campo restaurante tem que ser preenchido!")]
         public string Nome { get; set; }
 
-        public ICollection<PratoView> Pratos { get; set; }
+        public ICollection<PratoViewModel> Pratos { get; set; }
     }
 }

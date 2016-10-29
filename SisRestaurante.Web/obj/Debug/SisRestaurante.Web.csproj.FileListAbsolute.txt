@@ -68,6 +68,7 @@ C:\Users\jtcm\Documents\Visual Studio 2015\Git\SistemaRestaurante\SisRestaurante
 C:\Users\jtcm\Documents\Visual Studio 2015\Git\SistemaRestaurante\SisRestaurante.Web\bin\SisRestaurante.Web.dll
 C:\Users\jtcm\Documents\Visual Studio 2015\Git\SistemaRestaurante\SisRestaurante.Web\bin\SisRestaurante.Web.pdb
 C:\Users\jtcm\Documents\Visual Studio 2015\Git\SistemaRestaurante\SisRestaurante.Web\bin\Antlr3.Runtime.dll
+C:\Users\jtcm\Documents\Visual Studio 2015\Git\SistemaRestaurante\SisRestaurante.Web\bin\AutoMapper.dll
 C:\Users\jtcm\Documents\Visual Studio 2015\Git\SistemaRestaurante\SisRestaurante.Web\bin\EntityFramework.dll
 C:\Users\jtcm\Documents\Visual Studio 2015\Git\SistemaRestaurante\SisRestaurante.Web\bin\EntityFramework.SqlServer.dll
 C:\Users\jtcm\Documents\Visual Studio 2015\Git\SistemaRestaurante\SisRestaurante.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
@@ -88,6 +89,7 @@ C:\Users\jtcm\Documents\Visual Studio 2015\Git\SistemaRestaurante\SisRestaurante
 C:\Users\jtcm\Documents\Visual Studio 2015\Git\SistemaRestaurante\SisRestaurante.Web\bin\WebGrease.dll
 C:\Users\jtcm\Documents\Visual Studio 2015\Git\SistemaRestaurante\SisRestaurante.Web\bin\SisRestaurante.Domain.pdb
 C:\Users\jtcm\Documents\Visual Studio 2015\Git\SistemaRestaurante\SisRestaurante.Web\bin\SisRestaurante.Entity.pdb
+C:\Users\jtcm\Documents\Visual Studio 2015\Git\SistemaRestaurante\SisRestaurante.Web\bin\AutoMapper.xml
 C:\Users\jtcm\Documents\Visual Studio 2015\Git\SistemaRestaurante\SisRestaurante.Web\bin\EntityFramework.xml
 C:\Users\jtcm\Documents\Visual Studio 2015\Git\SistemaRestaurante\SisRestaurante.Web\bin\EntityFramework.SqlServer.xml
 C:\Users\jtcm\Documents\Visual Studio 2015\Git\SistemaRestaurante\SisRestaurante.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
@@ -103,6 +105,5 @@ C:\Users\jtcm\Documents\Visual Studio 2015\Git\SistemaRestaurante\SisRestaurante
 C:\Users\jtcm\Documents\Visual Studio 2015\Git\SistemaRestaurante\SisRestaurante.Web\bin\System.Net.Http.Formatting.xml
 C:\Users\jtcm\Documents\Visual Studio 2015\Git\SistemaRestaurante\SisRestaurante.Web\bin\System.Web.Http.xml
 C:\Users\jtcm\Documents\Visual Studio 2015\Git\SistemaRestaurante\SisRestaurante.Web\bin\System.Web.Http.WebHost.xml
-C:\Users\jtcm\Documents\Visual Studio 2015\Git\SistemaRestaurante\SisRestaurante.Web\obj\Debug\SisRestaurante.Web.csprojResolveAssemblyReference.cache
 C:\Users\jtcm\Documents\Visual Studio 2015\Git\SistemaRestaurante\SisRestaurante.Web\obj\Debug\SisRestaurante.Web.dll
 C:\Users\jtcm\Documents\Visual Studio 2015\Git\SistemaRestaurante\SisRestaurante.Web\obj\Debug\SisRestaurante.Web.pdb

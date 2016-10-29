@@ -10,7 +10,7 @@ using Newtonsoft.Json.Serialization;
 namespace SisRestaurante.Web.Models
 {
     [Table("Prato")]
-    public class PratoView
+    public class PratoViewModel
     {
         public int PratoId { get; set; }
         [Display(Name = "Prato")]
@@ -22,6 +22,6 @@ namespace SisRestaurante.Web.Models
         [Required(ErrorMessage = "O campo preço tem que ser preenchido!")]
         public Decimal Preco { get; set; }
         public int RestauranteId { get; set; }
-        public RestauranteView Restaurante { get; set; }
+        public RestauranteViewModel Restaurante { get; set; }
     }
 }

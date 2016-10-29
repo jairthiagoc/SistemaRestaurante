@@ -23,20 +23,20 @@ namespace SisRestaurante.Web.Controllers
         // GET: Prato
         public ActionResult Index()
         {
-            var lspratosview = new List<PratoView>();
+            var lspratosview = new List<PratoViewModel>();
             var lsPratos = pratorep.RetornaTodos().Include(p => p.Restaurante);
 
             if (lsPratos.Count() > 0)
             {
                 foreach (var item in lsPratos)
                 {
-                    PratoView prato = new PratoView()
+                    PratoViewModel prato = new PratoViewModel()
                     {
                         Nome = item.Nome,
                         Preco = item.Preco,
                         RestauranteId = item.RestauranteId,
                         PratoId = item.PratoId,
-                        Restaurante = new RestauranteView()
+                        Restaurante = new RestauranteViewModel()
                         {
                             Nome = item.Restaurante.Nome
                         },
@@ -58,7 +58,7 @@ namespace SisRestaurante.Web.Controllers
             }
             Prato prato = pratorep.Procurar(id);
 
-            PratoView pratoview = new PratoView()
+            PratoViewModel pratoview = new PratoViewModel()
             {
                 Nome = prato.Nome,
                 Preco = prato.Preco,
@@ -84,7 +84,7 @@ namespace SisRestaurante.Web.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "PratoId,Nome,Preco,RestauranteId")] PratoView pratoview)
+        public ActionResult Create([Bind(Include = "PratoId,Nome,Preco,RestauranteId")] PratoViewModel pratoview)
         {
             if (ModelState.IsValid)
             {
@@ -114,7 +114,7 @@ namespace SisRestaurante.Web.Controllers
 
             var dados = String.Format("{0:0.##}", prato.Preco);
 
-            PratoView pratoview = new PratoView()
+            PratoViewModel pratoview = new PratoViewModel()
             {
                 PratoId = prato.PratoId,
                 Nome = prato.Nome.Trim(),
@@ -135,7 +135,7 @@ namespace SisRestaurante.Web.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "PratoId,Nome,Preco,RestauranteId")] PratoView pratoview)
+        public ActionResult Edit([Bind(Include = "PratoId,Nome,Preco,RestauranteId")] PratoViewModel pratoview)
         {
             if (ModelState.IsValid)
             {
@@ -162,7 +162,7 @@ namespace SisRestaurante.Web.Controllers
             }
             Prato prato = pratorep.Procurar(id);
 
-            PratoView pratoview = new PratoView()
+            PratoViewModel pratoview = new PratoViewModel()
             {
                 PratoId = prato.PratoId,
                 Nome = prato.Nome,

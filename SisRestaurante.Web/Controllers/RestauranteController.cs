@@ -31,7 +31,7 @@ namespace SisRestaurante.Web.Controllers
             return PartialView("ListaRestaurantes", FiltroRestaurante(nome));
         }
 
-        public List<RestauranteView> FiltroRestaurante(string nome = null)
+        public List<RestauranteViewModel> FiltroRestaurante(string nome = null)
         {
             List<Restaurante> restaurantes = repRestaurante.RetornaTodos().ToList();
 
@@ -39,12 +39,13 @@ namespace SisRestaurante.Web.Controllers
             {
                 restaurantes = restaurantes.Where(r => r.Nome.ToUpper().Contains((nome.ToUpper()))).ToList();
             }
-            var rest = new List<RestauranteView>();
+            var rest = new List<RestauranteViewModel>();
 
             foreach (var item in restaurantes)
             {
-                RestauranteView r = new RestauranteView()
+                RestauranteViewModel r = new RestauranteViewModel()
                 {
+                    RestauranteId = item.RestauranteId,
                     Nome = item.Nome
                 };
                 rest.Add(r);
@@ -62,7 +63,7 @@ namespace SisRestaurante.Web.Controllers
             }
             Restaurante restaurante = repRestaurante.Procurar(id);
 
-            Restaurante rest = new Restaurante()
+            RestauranteViewModel rest = new RestauranteViewModel()
             {
                 Nome = restaurante.Nome,
                 RestauranteId = restaurante.RestauranteId
@@ -83,7 +84,7 @@ namespace SisRestaurante.Web.Controllers
 
         [System.Web.Mvc.HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "RestauranteId,Nome")] RestauranteView restaurante)
+        public ActionResult Create([Bind(Include = "RestauranteId,Nome")] RestauranteViewModel restaurante)
         {
             if (ModelState.IsValid)
             {
@@ -112,7 +113,7 @@ namespace SisRestaurante.Web.Controllers
             }
             Restaurante restaurante = repRestaurante.Procurar(id);
 
-            RestauranteView rest = new RestauranteView()
+            RestauranteViewModel rest = new RestauranteViewModel()
             {
                 Nome = restaurante.Nome,
                 RestauranteId = restaurante.RestauranteId
@@ -130,7 +131,7 @@ namespace SisRestaurante.Web.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [System.Web.Mvc.HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "RestauranteId,Nome")] RestauranteView restaurante)
+        public ActionResult Edit([Bind(Include = "RestauranteId,Nome")] RestauranteViewModel restaurante)
         {
             if (ModelState.IsValid)
             {
@@ -157,7 +158,7 @@ namespace SisRestaurante.Web.Controllers
             }
             Restaurante restaurante = repRestaurante.Procurar(id);
 
-            RestauranteView rest = new RestauranteView()
+            RestauranteViewModel rest = new RestauranteViewModel()
             {
                 Nome = restaurante.Nome,
                 RestauranteId = restaurante.RestauranteId
